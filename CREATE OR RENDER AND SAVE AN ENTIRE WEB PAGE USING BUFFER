@@ -1,1 +1,17 @@
 
+<!-- RUN THROUGH A WEB PAGE AND CREATE ANOTHER COPY OF IT  -->
+
+<?php
+session_start();
+// Start the buffering //
+ob_start();
+?>
+
+<html>
+<!-- html code goes here or an entire site -->
+</html>
+
+<?php
+// Get the contents from the html above and save it to a new page on the server
+file_put_contents('new-page.html', ob_get_contents());
+?> 
