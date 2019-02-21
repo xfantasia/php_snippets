@@ -1,0 +1,6 @@
+//CHECKS IF AN IMAGE EXISTS ON THE SERVER
+$external_link = "https://www.some-website.com/images/some-image.png";
+if (@getimagesize($external_link)) 
+{
+//DO SOME STUFF
+} else {}
