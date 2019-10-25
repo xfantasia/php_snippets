@@ -1,0 +1,10 @@
+<?php
+					$timestamp = $value2['tx_date_server'];
+					$datetimeFormat = 'Y-m-d H:i:s';
+
+					$date = new \DateTime();
+					// If you must have use time zones
+					// $date = new \DateTime('now', new \DateTimeZone('Europe/Helsinki'));
+					$date->setTimestamp($timestamp);
+					echo $date->format($datetimeFormat);
+				?>
